@@ -18,7 +18,12 @@ function divide(num1, num2) {
 // User Interface Logic
 function handleCalculation(event) {
   event.preventDefault();
-  // the code to get and process form values will go here!
+  const number1 = parseInt(document.querySelector("input#input1").value);
+  const number2 = parseInt(document.querySelector("input#input2").value);
+  const operator = document.querySelector("input[name='operator']:checked").value;
+  console.log("Number 1: " + number1);
+  console.log("Number 2: " + number2);
+  console.log("Operator:", operator);
 }
 
 window.addEventListener("load", function() {
